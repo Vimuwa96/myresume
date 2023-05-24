@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+ 
+  overflow-x: auto;
+
+}
+
+#Navigation {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-weight: 500;
+}
+
+.main{
+    height: 200vh;
+}
+
+.navbar-brand{
+    padding-left: 80px;
+}
+
+
+.intro{
+    line-height: 0.8;
+}
+
+
+.welcome{
+    font-size: 72px;
+    font-weight: 500;
+    overflow-y: hidden;
+    font-family: 'Rubik', sans-serif;
+}
+
+.name{
+    
+    font-size: 50px;
+    font-weight: 500;
+    overflow-y: hidden;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .welcome{
+        font-size: 50px;
+        font-weight: 550;
+
+    }
+    
+    .name{
+        padding-left: 100px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+        .intro{
+            line-height: 0.8;
+        }
+    }
+
+
+.aboutme{
+    padding: 25px;
+    background-color: black;
+    color: white;
+ 
+}
+
+.aboutme:hover{
+    color: red;
+}
