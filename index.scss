@@ -1,0 +1,91 @@
+$card-border-radius: 3rem;
+$background-image: 'https://source.unsplash.com/featured?utah,mountain,forest';
+
+.card-container {
+  margin: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 90vw;
+  margin: auto auto;
+}
+
+.card {
+  position: relative;
+  width: 20rem;
+  aspect-ratio: 1/1;
+  margin-right: 5rem;
+  margin-bottom: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: $card-border-radius;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.5);
+  color: white;
+  
+  // Get different random backgrounds for each card.
+  @for $i from 1 through 5 {
+    &:nth-child(#{$i}) {
+      background-image: url("#{$background-image},#{$i}");
+    }
+  }
+  
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-links {
+  list-style: none;
+  margin: 0;
+  padding: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  & li {
+    display: inline-block;
+    margin-right: 1rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.social-link {
+  color: white;
+  text-decoration: none;
+  vertical-align: top;
+  font-size: 2.5rem;
+  
+  // Grow the links when hovering.
+  transition: font-size 100ms;
+  &:hover {
+    font-size: 3rem;
+  }
+}
+
+.card > header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 1.5rem 1.5rem 0 1.5rem;
+  font-size: 1.5rem;
+  font-family: "Spartan", sans-serif;
+  text-transform: uppercase;
+}
+
+.card-mask {
+  // Stretch the mask over the whole card.
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: $card-border-radius;
+}

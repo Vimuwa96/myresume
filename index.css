@@ -39,21 +39,29 @@
   font-family: "Rubik", sans-serif;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 600px) {
+
+  
   .welcome {
     font-size: 50px;
     font-weight: 550;
   }
 
   .name {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 400;
   }
   .intro {
     line-height: 0.8;
   }
 
+  .navbar-brand {
+    padding-left: 1px;
+  }
  
+  .me{
+    font-size: 12px;
+  }
 
 }
 
@@ -223,3 +231,9 @@
 .main3{
   height: 100vh;
 }
+
+.arrows{
+  z-index: 100;
+}
+
+
