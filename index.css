@@ -63,6 +63,13 @@
     font-size: 12px;
   }
 
+  .logome img{
+    height: 180px;
+    width: 180px;
+    border-radius: 15px;
+    transition: 0.5s;
+  }
+
 }
 
 .aboutmebutton {
@@ -209,12 +216,14 @@
 #designs{
   color: rgb(0, 0, 0);
   transition: 0.5s;
+  z-index: 600;
 }
 
 
 #designs:hover{
   background-color: red;
   color: rgb(255, 255, 255);
+  z-index: 600;
 }
 
 #developments{
@@ -228,9 +237,7 @@
 }
 
 
-.main3{
-  height: 100vh;
-}
+
 
 .arrows{
   z-index: 100;
@@ -238,6 +245,142 @@
 
 h4{
   text-transform: uppercase;
-  border-left: 8px solid red;
-  padding-left: 15px;
+}
+
+.card {
+  width: 190px;
+  height: 120px;
+  transition: all .5s;
+  box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+             -15px -15px 30px rgba(60, 60, 60, 0.082);
+  text-align: center;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card .header {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #212121;
+  margin-bottom: 16px;
+}
+
+.card .header .img-box {
+  width: 50px;
+}
+
+.card .header .title {
+  font-size: 1.1em;
+  letter-spacing: .1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 4px 0 14px 0;
+  transition: all .5s;
+  color: #edededc5;
+}
+
+.card:hover .header {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+.card:hover .card .header .title {
+  padding: 0;
+}
+
+.card .content {
+  display: block;
+  text-align: justify;
+  color: #212121;
+  margin: 0 18px;
+}
+
+.card .content p {
+  transition: all .5s;
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+.card .content a {
+  color: #fdfffd;
+  cursor: pointer;
+  transition: all .5s;
+  font-size: .8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.card .content .btn:hover {
+  border-bottom: 1px solid #1d8122;
+}
+
+
+.logome img{
+  filter: grayscale(0%);
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.logome img:hover{
+  filter: grayscale(50%);
+}
+
+#backtotop {
+  display: inline-block;
+  background-color: #e22605;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#backtotop::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#backtotop:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#backtotop:active {
+  background-color: #555;
+}
+#backtotop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles for the content section */
+
+
+iframe{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#social i {
+  cursor: pointer;
+  color: rgb(90, 88, 88);
+
+}
+
+#social i:hover {
+transform: scale(1.2);
+color: rgb(238, 175, 41);
 }

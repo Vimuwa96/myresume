@@ -5,12 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Vimukthi Malinda</title>
 
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-- FontAwsome -->
+        <script src="https://kit.fontawesome.com/1a3b5235e0.js"
+            crossorigin="anonymous"></script>
+
         <!--  -->
         <link rel="icon" type="image/x-icon" href="icon.png">
 
+        <!-- Magic Mouse -->
+        <script type="text/javascript"
+            src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
+
         <!-- External CSS -->
         <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="index.scss">
 
         <script
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -47,13 +57,11 @@
                                 href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#aboutme">About</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Skils</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
@@ -62,47 +70,60 @@
                 </div>
             </div>
         </nav>
+
         <!-- Navigation Bar End -->
 
         <!-- Main Section Start -->
-        <div class="main" style="background-color: #f3f4f5;">
+        <div class="main">
             <section id="wrapper" class="wrapper">
             </section>
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row p-5">
+                <div class="col-md-6" data-aos="fade-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="2000">
                     <div class="container p-5">
 
                         <div class="intro text-center">
-                            <p class="welcome pt-5">Hi
+                            <p class="welcome pt-5" id="app">Hi
                                 There!</p>
                             <p class="name">I'm Vimukthi <span
                                     style="color: red;font-weight: 400;">Malinda</span>
                             </p>
-                            <p class="me">Your Web Designer | Developer</p>
+                            <p class="me">Your Web <span style="color: red;">Designer</span>
+                                | Developer</p>
 
                         </div>
                         <div class="text-center aboutmebutton">
                             <div class="six col">
-                                <a href="#" class="button" id="button-1">About
+                                <a href="#aboutme" class="button" id="button-1">About
                                     Me</a>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="col-md-5 text-center d-none d-sm-block">
+                <div class="col-md-5 text-center d-none d-sm-block"
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="2000">
                     <img
                         src="main.png"
                         alt width="90%" height="100%">
                 </div>
             </div>
+            <div class="arrows mb-3">
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+            </div>
             <div class="row ">
                 <div class="col-md-12">
                     <div class="container">
-                        <h4>Welcome</h4>
-                        <p class="" style="text-align: justify;"> Welcome to
-                            my web
-                            developer/designer web page! My
+
+                        <p class="p-5 para" style="text-align: justify;">
+                            Welcome to
+                            my Web <span style="color:red">Developer</span> /<span>Designer</span>
+                            Web page! My
                             name is Vimukthi Malinda from Colombo, Sri Lanka,
                             and I am passionate about
                             creating exceptional online experiences. With a
@@ -112,47 +133,373 @@
                     </div>
                 </div>
             </div>
-
-            <div class="arrows">
-                <div class="arrow"></div>
-                <div class="arrow"></div>
-                <div class="arrow"></div>
-            </div>
         </div>
-        <div class="divider">
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300"><path
+
+        <div class="container" id="aboutme">
+            <div class="row p-4">
+                <div class="col-md-4">
+
+                    <div class="logome p-5">
+                        <img src="logome.jpg" alt width="100%" height="100%">
+                    </div>
+
+                </div>
+
+                <div class="col-md-8 pt-5">
+                    <table class="table">
+                        <thead></thead>
+                        <tbody>
+                            <tr>
+                                <td>Residence</td>
+                                <td>:</td>
+                                <td>Colombo</td>
+                            </tr>
+                            <tr>
+                                <td>City</td>
+                                <td>:</td>
+                                <td>Rajagiriya</td>
+                            </tr>
+                            <tr>
+                                <td>Age</td>
+                                <td>:</td>
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <td>Mobile</td>
+                                <td>:</td>
+                                <td><a href="tel:+94764906767">0764906767</a></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>:</td>
+                                <td><a href="tel:+94764906767">vmalinda866@gmail.com</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="row p-5">
+
+                <div class="col-md-6 mb-3">
+                    <h2>SKILLS</h2>
+                    <div class="lable">
+                        HTML
+                    </div>
+                    <div class="progress mb-1">
+                        <div
+                            class="progress-bar bg-primary align-content-center"
+                            role="progressbar" aria-label="Example with label"
+                            style="width: 95%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"
+                            data-aos="fade-right"
+                            data-aos-duration="1000">95%</div>
+                    </div>
+
+                    <div class="lable">
+                        CSS
+                    </div>
+                    <div class="progress mb-1">
+                        <div
+                            class="progress-bar bg-dark align-content-center"
+                            role="progressbar" aria-label="Example with label"
+                            style="width: 75%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"
+                            data-aos="fade-right"
+                            data-aos-duration="1500">75%</div>
+                    </div>
+
+                    <div class="lable">
+                        JavaScript
+                    </div>
+                    <div class="progress mb-1">
+                        <div
+                            class="progress-bar bg-secondary align-content-center"
+                            role="progressbar" aria-label="Example with label"
+                            style="width: 60%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"
+                            data-aos="fade-right"
+                            data-aos-duration="2000">60%</div>
+                    </div>
+
+                    <div class="lable">
+                        CSS
+                    </div>
+                    <div class="progress mb-1">
+                        <div
+                            class="progress-bar bg-dark align-content-center"
+                            role="progressbar" aria-label="Example with label"
+                            style="width: 75%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"
+                            data-aos="fade-right"
+                            data-aos-duration="2500">75%</div>
+                    </div>
+
+                    <div class="lable">
+                        WordPress / Woocommerce
+                    </div>
+                    <div class="progress mb-1">
+                        <div
+                            class="progress-bar bg-primary align-content-center"
+                            role="progressbar" aria-label="Example with label"
+                            style="width: 80%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"
+                            data-aos="fade-right"
+                            data-aos-duration="2500">80%</div>
+                    </div>
+
+                    <div class="lable">
+                        PHP
+                    </div>
+                    <div class="progress mb-1">
+                        <div
+                            class="progress-bar bg-primary align-content-center"
+                            role="progressbar" aria-label="Example with label"
+                            style="width: 80%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"
+                            data-aos="fade-right"
+                            data-aos-duration="3200">80%</div>
+                    </div>
+
+                    <div class="lable">
+                        Laravel v.10
+                    </div>
+                    <div class="progress mb-1">
+                        <div
+                            class="progress-bar bg-dark align-content-center"
+                            role="progressbar" aria-label="Example with label"
+                            style="width: 76%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"
+                            data-aos="fade-right"
+                            data-aos-duration="3500">76%</div>
+                    </div>
+
+                    <div class="lable">
+                        Photoshop / Illustrator
+                    </div>
+                    <div class="progress mb-1">
+                        <div
+                            class="progress-bar bg-secondary align-content-center"
+                            role="progressbar" aria-label="Example with label"
+                            style="width: 60%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"
+                            data-aos="fade-right"
+                            data-aos-duration="2000">60%</div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <div class="blob d-flex text-center d-none d-sm-block">
+                        <img src="skills.jpg" alt
+                            style="width: 100%; height: 100%; padding: 80px 0 0 50px;">
+                    </div>
+                </div>
+
+            </div>
+            <div class="divider">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300"><path
                     fill="#f3f4f8" fill-opacity="1"
                     d="M0,288L48,282.7C96,277,192,267,288,224C384,181,480,107,576,74.7C672,43,768,53,864,90.7C960,128,1056,192,1152,186.7C1248,181,1344,107,1392,69.3L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg> -->
 
-            <!-- Main Section End -->
-            <div class="container pt-5">
-                <div class="main2 g-0">
-                    <div class="row">
-                        <div class="col-md-6 p-5" id="designs">
+                <!-- Main Section End -->
+                <div class="container pt-5">
+                    <div class="main2 g-0">
+                        <div class="row">
+                            <div class="col-md-6 p-5" id="designs"
+                                data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="1500">
 
-                            <h2>WEB DESIGNING</h2>
+                                <h2>WEB DESIGNING</h2>
 
-                            <p style="text-align: justify;">Lorem ipsum dolor,
-                                sit amet consectetur
-                                adipisicing elit. Neque consequatur laboriosam
-                                reiciendis dolorum voluptatibus quasi,
-                                reprehenderit id suscipit error cumque aliquid
-                                ullam, minus exercitationem iste voluptas
-                                quaerat in dolore asperiores.</p>
+                                <p style="text-align: justify;">Lorem ipsum
+                                    dolor,
+                                    sit amet consectetur
+                                    adipisicing elit. Neque consequatur
+                                    laboriosam
+                                    reiciendis dolorum voluptatibus quasi,
+                                    reprehenderit id suscipit error cumque
+                                    aliquid
+                                    ullam, minus exercitationem iste voluptas
+                                    quaerat in dolore asperiores.</p>
+
+                            </div>
+                            <div class="col-md-6 p-5" id="developments"
+                                data-aos="flip-right"
+                                data-aos-easing="ease-out-cubic"
+                                data-aos-duration="1500">
+
+                                <h2 class="d-flex" style="justify-content: end;">WEB
+                                    DEVELOPMENT</h2>
+
+                                <p style="text-align: justify;">Lorem ipsum
+                                    dolor,
+                                    sit amet consectetur
+                                    adipisicing elit. Neque consequatur
+                                    laboriosam
+                                    reiciendis dolorum voluptatibus quasi,
+                                    reprehenderit id suscipit error cumque
+                                    aliquid
+                                    ullam, minus exercitationem iste voluptas
+                                    quaerat in dolore asperiores.</p>
+
+                            </div>
 
                         </div>
-                        <div class="col-md-6 p-5" id="developments">
 
-                            <h2 class="d-flex" style="justify-content: end;">WEB
-                                DEVELOPMENT</h2>
+                    </div>
+                </div>
 
-                            <p style="text-align: justify;">Lorem ipsum dolor,
-                                sit amet consectetur
-                                adipisicing elit. Neque consequatur laboriosam
-                                reiciendis dolorum voluptatibus quasi,
-                                reprehenderit id suscipit error cumque aliquid
-                                ullam, minus exercitationem iste voluptas
-                                quaerat in dolore asperiores.</p>
+            </div>
+
+            <div class="container" id="portfolio">
+
+                <hr>
+                <h2 class="portfolio text-center p-5"
+                    style="text-transform: uppercase;">MY Portfolio</h2>
+
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <!--  -->
+
+                        <!--  -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="main3">
+                <div class="container mb-5">
+
+                    <div class="row d-flex justify-content-center">
+
+                        <div
+                            class="col-md-3 col-6 mb-2 d-flex justify-content-center"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+
+                            <div class="card">
+                                <div class="header">
+                                    <div class="img-box">
+                                        <svg viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                            <path fill="rgba(66,193,110,1)"
+                                                d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z"></path>
+                                        </svg>
+                                    </div>
+                                    <h1 class="title">Hawthrone Signatures</h1>
+                                </div>
+
+                                <div class="content mb-3 text-center">
+                                    <p>
+                                        Clothing Store <br>
+                                        HTML, CSS, PHP , Bootstrap
+                                    </p>
+
+                                    <a class="text-center btn btn-dark">View
+                                        Project</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="col-md-3 col-6 mb-2 d-flex justify-content-center"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+
+                            <div class="card">
+                                <div class="header">
+                                    <div class="img-box">
+                                        <svg viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                            <path fill="rgba(66,193,110,1)"
+                                                d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z"></path>
+                                        </svg>
+                                    </div>
+                                    <h1 class="title">Hawthrone Signatures</h1>
+                                </div>
+
+                                <div class="content mb-3 text-center">
+                                    <p>
+                                        Clothing Store <br>
+                                        HTML, CSS, PHP , Bootstrap
+                                    </p>
+
+                                    <a class="text-center btn btn-dark">View
+                                        Project</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="col-md-3 col-6 mb-2 d-flex justify-content-center"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+
+                            <div class="card">
+                                <div class="header">
+                                    <div class="img-box">
+                                        <svg viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                            <path fill="rgba(66,193,110,1)"
+                                                d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z"></path>
+                                        </svg>
+                                    </div>
+                                    <h1 class="title">Hawthrone Signatures</h1>
+                                </div>
+
+                                <div class="content mb-3 text-center">
+                                    <p>
+                                        Clothing Store <br>
+                                        HTML, CSS, PHP , Bootstrap
+                                    </p>
+
+                                    <a class="text-center btn btn-dark">View
+                                        Project</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="col-md-3 col-6 mb-2 d-flex justify-content-center"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom">
+
+                            <div class="card">
+                                <div class="header">
+                                    <div class="img-box">
+                                        <svg viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                            <path fill="rgba(66,193,110,1)"
+                                                d="M20.083 15.2l1.202.721a.5.5 0 0 1 0 .858l-8.77 5.262a1 1 0 0 1-1.03 0l-8.77-5.262a.5.5 0 0 1 0-.858l1.202-.721L12 20.05l8.083-4.85zm0-4.7l1.202.721a.5.5 0 0 1 0 .858L12 17.65l-9.285-5.571a.5.5 0 0 1 0-.858l1.202-.721L12 15.35l8.083-4.85zm-7.569-9.191l8.771 5.262a.5.5 0 0 1 0 .858L12 13 2.715 7.429a.5.5 0 0 1 0-.858l8.77-5.262a1 1 0 0 1 1.03 0zM12 3.332L5.887 7 12 10.668 18.113 7 12 3.332z"></path>
+                                        </svg>
+                                    </div>
+                                    <h1 class="title">Hawthrone Signatures</h1>
+                                </div>
+
+                                <div class="content mb-3 text-center">
+                                    <p>
+                                        Clothing Store <br>
+                                        HTML, CSS, PHP , Bootstrap
+                                    </p>
+
+                                    <a class="text-center btn btn-dark">View
+                                        Project</a>
+                                </div>
+                            </div>
 
                         </div>
 
@@ -161,33 +508,131 @@
                 </div>
             </div>
 
+            <div class="container p-5">
+
+                <p class="text-center"
+                    style="text-transform: uppercase; font-size: 25px; font-weight: 500;">Technologies
+                    I'm using </p>
+
+                <marquee behavior="scroll" direction="left">
+                    <img
+                        src="data:image/png;base64,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"
+                        alt style="height: 100px; padding-right: 100px;">
+                    <img
+                        src="https://png.pngitem.com/pimgs/s/198-1985002_css3-logo-hd-png-download.png"
+                        alt style="height: 100px; padding-right: 100px;">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpngGRjYX1ca7qAADU3K6eGLj7ShQE3L2otdzfryl_Y9Ht2QRoQKYQbsXd36XIxMbYOw0&usqp=CAU"
+                        alt style="height: 100px; padding-right: 100px;">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png"
+                        alt style="height: 100px; padding-right: 100px;">
+                    <img
+                        src="https://asset.brandfetch.io/ide68-31CH/idlxAUbIOo.jpeg"
+                        alt style="height: 100px; padding-right: 100px;">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
+                        alt style="height: 100px;">
+                </marquee>
+            </div>
         </div>
 
-        <div class="main3">
-            <div class="container">
-      
-                </section>
-              
-                    <div class="row">
+        <!-- Contact -->
 
-                        <div class="col-md-4 mb-2">
-                       
-                        </div>
-
-                    </div>
-
+        <div class="container p-5">
+            <div class="row">
+                
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.55140262494925!2d79.9186217557779!3d6.911822461146517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259838e7018cf%3A0x73f224b78a4c632!2sMithra%20Kalapaluwawa!5e0!3m2!1sen!2slk!4v1685359712160!5m2!1sen!2slk"
+                        width="600" height="450" style="border:0;"
+                        allowfullscreen
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
              
 
             </div>
+
         </div>
+
+        <!-- Footer -->
+        <div class="custom-shape-divider-bottom-1671180317">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path
+                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                class="shape-fill"></path>
+            </svg>
+          </div>
+        
+          <div class="row p-5" style="background: black;">
+        
+            <div class="col-sm-6 p-3" style="color: white;">
+              <p>No : 160, Postgraduate Institute of Medicine <br>Prof. Nandadasa Kodagoda Mawatha, <br> Colombo 07 Sri
+                Lanka.
+              </p>
+              <br>
+            </div>
+           
+        
+            <div class="col-sm-6 p-3">
+              <div class="row">
+                <div class="col-2" id="social">
+                  <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                </div>
+                <div class="col-2" id="social">
+                  <a href=""><i class="fa-regular fa-envelope fa-2x"></i></a>
+                </div>
+       
+                <div class="col-2" id="social">
+                  <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+                </div>
+                <div class="col-2" id="social">
+                  <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--  -->
+        <div id="backtotop"></div>
+
+        <!-- Ribble -->
+        <script src="ribble-master/dist/ribble.js"></script>
+
+        <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
 
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"></script>
 
- 
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
 
         <script src="anime.js"></script>
+
+        <!-- aos -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+
+        <script>
+    var btn = $('#backtotop');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+</script>
     </body>
 </html>
